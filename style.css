@@ -145,6 +145,14 @@ header .cards{
   justify-content: space-between;
   align-items: center;
   
+  
+}
+header .cards .card:hover {
+  border: 2px solid red;
+  background-color: rgba(128, 128, 128, 0.774); 
+  transition: 1s;
+  
+  
 }
 header .cards .card:first-of-type{
   margin-left: 10px;
@@ -162,4 +170,74 @@ header .cards .card a{
 }
 header .cards .card a:hover{
   background-color: gray;
+}
+
+
+/* -----------------------------slider---------------------------------------- */
+.slider{
+  height: 400px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  margin-bottom: 40px;
+
+}
+.slide_track{
+  display: flex;
+  width: calc(250px * 14);
+
+}
+.slide{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+}
+.section-2 .slider .slide .card{
+  width: 100%;
+  transition: 1s;
+}
+.section-2 .slider .card:hover{
+  transform: translateZ(10px);
+  background-color: rgba(128, 128, 128, 0.774); 
+ 
+  
+}
+.slider::before,
+.slider::after{
+  background:linear-gradient(to right rgba(255,255,255,1)) 0%,rgba(255,255,255,0) ;
+  content: "";
+  height: 100%;
+  position: absolute;
+  width:15%;
+  z-index: 2;
+  
+}
+.slider::before{
+  left: 0;
+  right: 0;
+}
+.slide::after{
+  left: 0;
+  right: 0;
+}
+.section-2 .slider .slide_track{
+  animation: scroll 40s linear infinite;
+}
+@keyframes scroll{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translate(calc(-250PX * 7));
+  }
+}
+.section-2 .slider .slide_track:hover{
+  animation-play-state: paused;
+
 }
