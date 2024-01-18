@@ -148,7 +148,7 @@ header .cards{
   
 }
 header .cards .card:hover {
-  border: 2px solid red;
+ 
   background-color: rgba(128, 128, 128, 0.774); 
   transition: 1s;
   
@@ -240,4 +240,55 @@ header .cards .card a:hover{
 .section-2 .slider .slide_track:hover{
   animation-play-state: paused;
 
+}
+
+/* ----------section-3-- studets  says------------------ */
+.section-3 .container .card{
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(107,99,107,1);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(107,99,107,1);
+  box-shadow: 0px 0px 3px 0px rgba(107,99,107,1);
+  padding: 0px 12px;
+  cursor:context-menu;
+  transition: .7s;
+}
+.section-3 .container h2 {
+  color: rgb(116, 119, 122);
+  font-weight: 700;
+}
+.section-3 .container .card:hover{
+  background-color: rgba(128, 128, 128, 0.774); 
+} 
+.section-3 .container .card p{
+  font-weight: 400;
+}
+.section-3 .container .card:hover img{
+  transform: translateZ(20px);
+ transition: 1s;
+}
+.section-3 .container .card .card_img{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: red; */
+}
+.section-3 .container .card img{
+  border-radius: 50%;
+  height: 60px;
+  width: 25%;
+  position: relative;
+  right: 50px;
+  margin-top: 30px;
+}
+.section-3 .container .card a{
+  text-align: center;
+  text-decoration: none;
+  border-bottom: 2px solid gray;
+ margin-bottom: 2px;
+ color: rgb(43, 43, 115);
+ font-weight: 500;
+  
+}
+.section-3 .container .card .anchor_tag{
+  text-align: center;
+  margin-bottom: 5px;
 }
