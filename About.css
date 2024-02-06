@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header .container .row img{
+    height: 450px;
+    filter:brightness(50%);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    
+}
+header .container .row h2{
+    color:white;
+    font-size: 50px;
+    text-align: center;
+}
+/* ====================section-8=============== */
+section-8 .container{
+    margin-top: 100px;
+}
+section-8 .container i{
+    font-size: 80px;
+    color:  gray;
+}
+section-8 .container .row .icon{
+    position: relative;
+}
+section-8 .container .row .icon h3{
+    font-size: 40px;
+    margin-bottom: 0;
+    position: relative;
+    color: rgb(78, 76, 76);
+    
+}
+section-8 .container .row .icon h3::after{
+    content: "";
+    position: absolute;
+    background-color: rgba(109, 103, 103, 0.26);
+    top: 60px;
+    left: 0;
+    height: 10px;
+    width: 20%;
+}
+section-8 .container .row p{
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(48, 45, 45);
+
+}
+section-8 .container .row li{
+    line-height: 50px;
+}
