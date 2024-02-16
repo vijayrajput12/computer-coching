@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="responce.css">
+    <script src="js/java.js"></script>
 </head>
 
 <body>
@@ -24,8 +25,8 @@
                 <div class="col-md-4">
                     <img src="image/jbj icon.webp" alt="">
                 </div>
-                <div class="col-md-8">
-                    <ul>
+                <div class="col-md-8"  >
+                    <ul id="sidemenu">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="About.html" target="_blank">About  Us</a></li>
                         <li><a href="Contact.html" target="_blank">Contact</a></li>
@@ -33,7 +34,10 @@
                         <li><a href="">Certificate</a></li>
                     </ul>
                 </div>
+                <i onclick="openmenu()" id="menu" class="fa-solid fa-bars"></i>
             </nav>
+            <i id="closemenu" class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+           
           </div>
         </div>
 
@@ -45,7 +49,7 @@
 
                        
                         <div class="header_content">
-                            <h1>15 years of excellence!</h1>
+                            <h2>15 years of excellence!</h2>
                             <p>From inception to this momentons occasion, years of excellence shine bright with 400+
                                 project accomplished and the invaluable lessons imparted to over 10,000 student. Let's
                                 rejoice in our shared succes.</p>
@@ -285,7 +289,7 @@
                      from our courses. Here are the statements</p>
                 </div>
                 <div class="col-md-1"></div>
-                <div class="col-md-3">
+                <div class="col-md-3 card3 col-sm-12">
                   <div class="cards card_first" >
                     <div class="card">
                       <div class="card_img">
@@ -443,10 +447,7 @@
             <div class="row">
               <div class="col-md-3">
                 <h2>Our Courses</h2>
-                <!-- <div class="content">
-                  <img src="image/grafic desing].jpeg" alt="">
-                  <h4>graphic design</h4>
-                </div> -->
+               
               </div>
               <div class="col-md-1"></div>
 
@@ -634,7 +635,7 @@
           <footer>
             <div class="con">
               <div class="content">
-                <div class="icon">
+                <div class="icon footer_content">
                   <h4>Follow Us!</h4>
                   <a href=""><i class="fa-brands fa-facebook-f"></i></a>
                   <a href=""><i class="fa-brands fa-instagram"></i></a>
@@ -642,7 +643,7 @@
                   <a href=""><i class="fa-brands fa-youtube"></i></a>
                 </div>
 
-                <div class="links">
+                <div class="links footer_content">
                   <h4>Quick Links</h4>
                   <h6>java</h6>
                   <h6>Python</h6>
@@ -652,7 +653,7 @@
                   <h6>Cloud Computing</h6>
                 </div>
 
-                <div class="courses">
+                <div class="courses footer_content">
                 <h4>Top Courses</h4>
                 <h6>Data Science</h6>
                 <h6>Data Analytics</h6>
@@ -661,13 +662,13 @@
                 <h6>Ui&Ux</h6>
                 </div>
 
-                <div class="policy">
+                <div class="policy footer_content">
                   <h4>Policies</h4>
                   <h6>Privacy Policy</h6>
                   <h6>Refund Policy</h6>
                 </div>
 
-                <div class="Contact">
+                <div class="Contact footer_content">
                   <h4>Contact</h4>
                   <h6 class="mb-4">Join our malling list and get  exclusive discounts, early product launch access and more </h6>
                   <input type="email" placeholder="email address">
@@ -675,7 +676,7 @@
                 </div>
                 
             </div>
-            <div class="copyright">
+            <div class="copyright ">
               <i class="fa-regular fa-copyright"></i> copyright 2024 ,All Reserved
                Made by DUCAT INDIA
             </div>
