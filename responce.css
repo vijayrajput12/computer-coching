@@ -342,11 +342,7 @@ footer .con{
   margin-bottom: 30px;
   /* height: 500px; */
 }
-footer .con .content {
-  /* display: flex; 
-   justify-content:center;
-  align-items:baseline; */
-}
+
 footer .footer_content{
   display: block;
 }
@@ -395,9 +391,28 @@ footer .con .content .Contact input{
 }
 .section-4 .container .col-md-3{
   margin: auto;
- 
   margin-bottom: 15px;
 }
 
 
+}
+@media only screen and (max-width:360px) {
+ 
+  footer .policy{
+    display: none;
+  }
+  footer .Contact{
+    display: none;
+  }
+  .section-4 .container .col-md-3{
+    margin: auto;
+    width: 60%;
+    margin-bottom: 15px;
+  }
+  header .header_search{
+    width: 94%;
+    border: 2px solid yellow;
+    margin-top: -80px;
+  }
+  
 }
